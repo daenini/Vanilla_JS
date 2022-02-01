@@ -74,8 +74,36 @@ console.log(player);
  console.log(player.name);
  player2.sayHello("lynn");
 
+ /* return */
+const age = 96;
+function calculateKrAge(ageofForeigner){
+ return  ageofForeigner + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+const calculater = {
+    plus : function (a , b) {
+        return a + b;
+    },
+    minus : function (a , b) {
+        return a - b;
+    },
+    times : function (a , b) {
+        return a * b;
+    },
+    divide : function (a , b) {
+        return a / b;
+    },
+    power : function (a , b) {
+        return a ** b;
+    },
+};
+
+const  plusResult = calculater.plus(2,3); //5
+const minusResult = calculater.minus(plusResult, 10); //-5
+const timesResult = calculater.times(10, minusResult); // -50
+const divideResult = calculater.divide(timesResult,plusResult); // -10
+const powerResult = calculater.power(divideResult,minusResult); // 0.00009999999
 
 
-
-
- 
