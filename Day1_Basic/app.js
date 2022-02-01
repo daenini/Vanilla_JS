@@ -52,4 +52,30 @@ player.points - player.points + 15;
 player.lastName = "potato";
 console.log(player);
 
+/* function */
+ function sayHello(nameOfPerson, age){
+     console.log("Hello! my name "+ nameOfPerson +"and I'm " + age);
+ }
 
+ sayHello("daeni",25);
+
+ function plus(firstNumber,secondNumber){
+     console.log(firstNumber + secondNumber);
+ }
+
+ plus(10, 12)
+
+ const player2 = {
+     name : "daeni",
+     sayHello : function(otherPersonsName){
+        console.log("hello! " + otherPersonsName + " nice to meet you");
+     },
+ };
+ console.log(player.name);
+ player2.sayHello("lynn");
+
+
+
+
+
+ 
