@@ -34,4 +34,22 @@ console.log(daysOfWeek[2]);
 daysOfWeek.push("sun");
 console.log(daysOfWeek);
 
+/* Object */
+const player = {
+    name : "daeni",
+    points: 10,
+    fat: true
+};
+console.log(player);
+// object에 접근하는 방법
+console.log(player.name);
+
+console.log(player);
+// const는 값을 변경할 수 없지만 이 경우에는 player값을 바꾼것이 아니라 object값을 바꾸는것이라 가능
+player.fat = false;
+player.points - player.points + 15;
+// object에 추가하는법
+player.lastName = "potato";
+console.log(player);
+
 
