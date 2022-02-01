@@ -106,4 +106,24 @@ const timesResult = calculater.times(10, minusResult); // -50
 const divideResult = calculater.divide(timesResult,plusResult); // -10
 const powerResult = calculater.power(divideResult,minusResult); // 0.00009999999
 
+parseInt("15") // String 15를 int 15로 바꿔줌 
+
+const age2 = parseInt(prompt("How old are you?")); 
+console.log(isNaN(age2)); // isNaN 함수는 숫자가 맞으면 False로 반환 아니면 true로 반환
+
+ /* 조건문 if */
+
+if(isNaN(age2) || age2 < 0) {
+    // condition == true
+    console.log("Plese write a real positive number");
+}else if(age2 < 18) {
+    console.log("You are too young.");
+}else if(age2 >= 18 && age <= 50){
+    console.log("you can drink")
+}else if(age2 > 50 && age <= 80){
+    console.log("You should exercise");
+}else if(age2 > 80){
+    console.log("You can do whatever you want.");
+}
+
 
